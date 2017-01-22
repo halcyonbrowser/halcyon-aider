@@ -4,7 +4,8 @@
   "description": "App for the blind",
   "main": "main.js",
   "scripts": {
-    "start": "electron-rebuild; electron ."
+    "start": "electron-rebuild; electron .",
+    "serve": "budo ./app/js/index.js:./app/js/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "eslint": "^3.14.0"
   },
   "dependencies": {
-    "socket.io": "^1.7.2",
-    "socket.io-stream": "^0.9.1"
+    "express": "^4.14.0",
+    "simple-peer": "^6.2.1",
+    "ws": "^1.1.1"
   }
 }
