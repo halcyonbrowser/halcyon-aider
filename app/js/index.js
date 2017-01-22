@@ -18,6 +18,7 @@ ws.on('message', function(message) {
 peer.on('signal', function(data) {
   console.log(data)
   ws.send(JSON.stringify(data))
+  document.getElementById('status').innerHTML = 'On a call'
 })
 
 //peer.on('data', function(data) {
